@@ -36,7 +36,7 @@ jobs:
       - name: Validate catalog snapshot
         run: node scripts/check-catalog.mjs
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.11"
       - name: Test Veys Agents runtime
