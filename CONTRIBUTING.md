@@ -27,8 +27,11 @@ Open `http://127.0.0.1:4377`.
 ```sh
 npm run check
 npm test
+npm run test:veys
 node scripts/check-catalog.mjs
 ```
+
+The Veys Agents Python project lives in `veys-agents/` and keeps its own README, contribution guide, and license. Run it from that directory with `python3 -m veys`, or use `npm run veys` from the repository root. Its standard-library tests can be run with `npm run test:veys`.
 
 Keep generated catalog output consistent with `scripts/import-catalog.py`. When refreshing upstream content, record the full source commit and inspect the changed agent files, license, division and tool metadata, and runbook references.
 

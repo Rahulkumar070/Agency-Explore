@@ -16,7 +16,7 @@ concurrency:
 
 jobs:
   verify:
-    name: Verify application
+    name: Verify monorepo
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -40,5 +40,5 @@ jobs:
         with:
           python-version: "3.11"
       - name: Test Veys Agents runtime
-        working-directory: integrations/veys-agents
+        working-directory: veys-agents
         run: python -m unittest discover -s tests -v

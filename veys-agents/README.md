@@ -15,7 +15,7 @@ The two tools are independently runnable. The static browser app does not invoke
 From the repository root:
 
 ```sh
-cd integrations/veys-agents
+cd veys-agents
 ./bin/veys
 ```
 
@@ -46,4 +46,4 @@ For a human-assisted run without a model server, use `--via-files`. The CLI writ
 
 ## License and maintenance
 
-Veys is distributed under its own [MIT license](LICENSE). Preserve this notice when copying or modifying the Veys subproject. Its source and tests are maintained under `integrations/veys-agents`; run its standard-library tests from that directory with `python3 -m unittest discover -s tests -v`.
+Veys is distributed under its own [MIT license](LICENSE). Preserve this notice when copying or modifying the Veys subproject. Its source and tests are maintained under `veys-agents/`; run its standard-library tests from this directory with `python3 -m unittest discover -s tests -v`, or from the monorepo root with `npm run test:veys`.
