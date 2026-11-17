@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#f5f4ee" />
+    <meta
+      name="description"
+      content="Find your AI specialists. Explore the Agency Agents catalog, compare roles, assemble a team, and turn an idea into a project brief."
+    />
+    <title>Agency Explorer — Find your people.</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <aside class="sidebar" aria-label="Main navigation">
+      <a class="brand" href="#/discover"
+        ><span class="brand-icon">a<span>e</span></span
+        ><span>agency<span class="brand-sub">EXPLORER</span></span></a
+      >
+      <div class="sidebar-label">YOUR NEXT GREAT IDEA STARTS HERE</div>
+      <nav id="nav"></nav>
+      <div class="sidebar-bottom">
+        <div class="live-dot"></div>
+        <span>Open source. Open possibilities.</span
+        ><a
+          href="https://github.com/msitarzewski/agency-agents"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Explore the source ↗</a
+        >
+      </div>
+    </aside>
+    <div class="app-shell">
+      <header class="topbar">
+        <button
+          id="menu"
+          class="icon-button mobile-only"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          ☰</button
+        ><span id="breadcrumb">The talent directory</span>
+        <div class="topbar-right">
+          <span class="local-badge">◉ &nbsp; Local workspace</span
+          ><a class="small-link" href="#/guide">Quick start ↗</a>
+        </div>
+      </header>
+      <main id="main" tabindex="-1">
+        <div class="loading">Loading your next team…</div>
+      </main>
+      <footer>
+        Built on
+        <a
+          href="https://github.com/msitarzewski/agency-agents"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Agency Agents ↗</a
+        ><span>Independent explorer · Catalog licensed under MIT</span>
+      </footer>
+    </div>
+    <dialog id="detail" aria-labelledby="detail-title"></dialog>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
