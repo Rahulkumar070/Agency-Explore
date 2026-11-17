@@ -1,6 +1,10 @@
 # Agency Explorer
 
+[![CI](https://github.com/Rahulkumar070/Agency-Explore/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Rahulkumar070/Agency-Explore/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 A browser-based directory and planning workspace built around [Agency Agents](https://github.com/msitarzewski/agency-agents). Discover specialists, compare roles, assemble a team, and turn a goal into a project brief and workflow board.
+
+This repository also includes **Veys Agents**, an optional local Python runtime for running agency teams on real briefs. The browser app remains a static discovery and planning tool; Veys is the separate execution path. Start with [Veys setup](integrations/veys-agents/README.md).
 
 ## Run locally
 
@@ -11,6 +15,31 @@ npm run dev
 ```
 
 Open http://127.0.0.1:4377. An equivalent command is `python3 -m http.server 4377 --bind 127.0.0.1 --directory dist`.
+
+## Run agents with Veys
+
+Python 3.11+ is required. The Veys runtime uses only the Python standard library. From the repository root:
+
+```sh
+cd integrations/veys-agents
+./bin/veys
+```
+
+At the desk prompt, type `example` to create an offline sample project, then `review` to inspect its draft. For the command line, still from `integrations/veys-agents`:
+
+```sh
+python3 -m veys catalog
+python3 -m veys demo --team agency /tmp/agency-explorer-demo
+python3 -m veys show /tmp/agency-explorer-demo
+```
+
+To work on your own brief, use `python3 -m veys run examples/campaign.md /tmp/my-campaign --team agency`. The default provider is a local OpenAI-compatible endpoint at `http://127.0.0.1:11434/v1`; configure `VEYS_BASE_URL` and `VEYS_MODEL` for a model server you control. Cloud providers may require an API key; keep it in your shell environment and never commit it. Read [Veys model setup](integrations/veys-agents/docs/hermes.md) for provider and Hermes details. Run outputs and client material should remain local; generated paths are gitignored.
+
+The browser app does not launch Veys or send briefs to it automatically. Veys is an optional local runtime that users run themselves.
+
+## Contributing and security
+
+Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request. Pull requests to `main` are checked by GitHub Actions for JavaScript syntax, application tests, and catalog integrity. Report security issues privately using [GitHub Security Advisories](https://github.com/Rahulkumar070/Agency-Explore/security/advisories/new); see [SECURITY.md](SECURITY.md). Contributors are expected to follow the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## Available now
 

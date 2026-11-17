@@ -2,3 +2,13 @@
 node_modules/
 .sites-local/
 artifacts/
+.veys/
+**/.venv/
+**/__pycache__/
+**/*.py[cod]
+**/*.sqlite3*
+**/runs/
+**/models/
+**/dist/
+**/build/
+**/*.egg-info/

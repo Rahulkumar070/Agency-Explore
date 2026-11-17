@@ -1,0 +1,95 @@
+[[role]]
+name = "qualification"
+desk = "sales"
+title = "Lead qualification"
+instructions = "Extract the buying trigger, requested outcome, decision maker and evidence of fit. Mark every unknown. Give three discovery questions and a reason to ask each."
+output = "A discovery sheet linking questions to buying decisions."
+check = "Every buying signal points to a statement in the brief."
+
+[[role]]
+name = "pitch"
+desk = "sales"
+title = "Pitch and follow-up"
+instructions = "Write a short discovery-call opening, a tailored offer and a follow-up email draft with one clear ask. Use only the evidence supplied for claims and proof."
+output = "A call opener and one follow-up the account owner can edit."
+check = "The ask fits the lead’s stated problem and claims have support."
+
+[[role]]
+name = "scope"
+desk = "sales"
+title = "Scope and proposal"
+instructions = "Write a statement of proposed deliverables, exclusions, acceptance tests and next decision. Distinguish a spending ceiling from an agreed fee and identify unresolved terms."
+output = "A proposal showing included work, client inputs and open commercial terms."
+check = "Client-owned assets stay with the client and a budget ceiling stays separate from a fee."
+
+[[role]]
+name = "brand"
+desk = "studio"
+title = "Brand strategy"
+instructions = "Turn the brief into a positioning hypothesis, audience promise, voice examples and a short creative brief. Mark any unverified audience insight."
+output = "A short positioning brief with a promise and voice examples."
+check = "Audience assumptions are identified before the studio acts on them."
+
+[[role]]
+name = "copy"
+desk = "studio"
+title = "Conversion copy"
+instructions = "Produce usable headline, body and call-to-action copy for the requested asset. Include one alternative and explain what customer question it addresses."
+output = "Ready-to-edit copy for each requested placement."
+check = "The CTA points to the destination named in the brief."
+
+[[role]]
+name = "content"
+desk = "studio"
+title = "Content production"
+instructions = "Draft a production calendar keyed to the channels the client requests. Give each item a hook, actual sample copy, required asset, owner role and measure of success."
+output = "A publishing plan tied to the requested channels and available assets."
+check = "Each planned item has an owner and a source for its assets."
+
+[[role]]
+name = "web"
+desk = "delivery"
+title = "Web experience"
+instructions = "Map the visitor journey, page sections, responsive behavior and accessibility checks. Specify exactly how to verify the primary action using the existing system."
+output = "A page outline and a testable visitor journey."
+check = "Existing forms and services keep their agreed scope."
+
+[[role]]
+name = "production"
+desk = "delivery"
+title = "Project delivery"
+instructions = "Sequence work into milestones with owner roles, dependencies and definitions of done. Identify inputs missing before kickoff and dates needing confirmation."
+output = "A milestone sequence with owners and dependencies."
+check = "A proposed date or owner does not become a client commitment."
+
+[[role]]
+name = "qa"
+desk = "delivery"
+title = "Acceptance testing"
+instructions = "Design acceptance tests for the proposed work. For each give a test input, action and observable pass condition. Describe what remains unverified."
+output = "An acceptance sheet with an action and observable result per check."
+check = "Planned checks are distinguished from checks someone actually ran."
+
+[[role]]
+name = "measurement"
+desk = "operations"
+title = "Measurement and reporting"
+instructions = "Define the funnel, event names, data sources and baseline needed. Calculate a rate only when both counts are supplied. Label missing evidence and propose the next measurement."
+output = "A measurement note showing counts, denominator and missing data."
+check = "Every reported rate can be recomputed from the inputs."
+
+[[role]]
+name = "accounts"
+desk = "operations"
+title = "Account management"
+instructions = "Draft a client update that separates completed work, proposed work, decisions and next steps. Give each open decision a proposed owner and a clear ask."
+output = "A client update with decisions, open questions and next owners."
+check = "Status language matches the evidence of completion."
+
+[[role]]
+name = "resourcing"
+desk = "operations"
+title = "Capacity planning"
+instructions = "Map dependencies and role capacity, identify the bottleneck and propose a delivery sequence for a small agency. Label any time or cost estimate and its assumptions."
+output = "A staffing plan for the work and availability in the brief."
+check = "Unconfirmed capacity and effort estimates carry explicit assumptions."

@@ -1,0 +1,41 @@
+name: Bug report
+description: Report a reproducible problem in Agency Explorer.
+title: "bug: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Please do not include secrets, private client data, or personal information.
+  - type: input
+    id: page
+    attributes:
+      label: Page or feature
+      placeholder: Agent search, team builder, project board…
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include the smallest set of steps that reproduces the issue.
+      placeholder: 1. Open… 2. Select… 3. Observe…
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+    validations:
+      required: true

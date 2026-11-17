@@ -1,0 +1,24 @@
+name: Feature request
+description: Suggest a useful improvement to discovery, planning, or project work.
+title: "feature: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: Describe the user problem and who experiences it.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: What would help?
+      description: Describe the outcome you would like. Sketches are optional.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or context
+      description: Add examples or approaches you have considered.
