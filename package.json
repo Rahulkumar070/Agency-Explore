@@ -2,6 +2,7 @@
   "name": "agency-explorer",
   "version": "1.0.0",
   "private": true,
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "python3 -m http.server 4377 --bind 127.0.0.1 --directory dist",
